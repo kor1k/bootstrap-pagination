@@ -28,11 +28,30 @@
         font-size: 50px;
         color: black;
         font-weight: 700;
+        margin-bottom: 20px;
     }
 
     .carousel {
         height: 400px;
     }
+
+    .page-item.active .page-link {
+        background-color: red;
+    !important;
+        border-color: red;
+        color: white;
+    }
+
+    .carousel-indicators .active {
+        background-color: violet;
+    }
+
+    .tab-content {
+        background-color: white;
+        color: black;
+        font-weight: 700;
+    }
+
 </style>
 <body>
 <div class="title">IT'S MAIN PAGE. YOU CAN MOVE TO OTHER PAGES FROM HERE</div>
@@ -71,6 +90,33 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
+
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+           aria-controls="nav-home" aria-selected="true">Лёша</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+           aria-controls="nav-profile" aria-selected="false">Алексей</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+           aria-controls="nav-contact" aria-selected="false">Лёшка</a>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. A adipisci aut distinctio earum magnam non odit perspiciatis
+        quisquam? Eaque, eos.
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Ea maiores molestiae porro quae quo. Asperiores aspernatur et fugiat
+        laboriosam magnam natus necessitatibus, non, nulla obcaecati praesentium quam saepe sed voluptatum.
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Atque, consequuntur, debitis! Ab animi commodi culpa dolor, doloremque earum
+        enim, eos est explicabo fugit ipsa necessitatibus odio quo tenetur vel! Aperiam asperiores autem, commodi
+        consectetur dolorem eius eligendi esse id laudantium neque numquam omnis quae quia rem rerum sit, tempora
+        voluptas.
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
